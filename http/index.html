@@ -2,6 +2,7 @@
   <button id="redirectInternal">Internal Redirect</button>
   <button id="redirectExternal">External Redirect</button>
   <button id="showURL">Show URL</button>
+  <button id="rename">Rename</button>
   <p id="textURL">Outer URL will appear here</p>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script src="//x.scraperwiki.com/js/scraperwiki.js"></script>
@@ -19,7 +20,9 @@ $(function(){
       $('#textURL').text(url)
     });
   });
-
+  $('#rename').on('click', function(){
+    scraperwiki.tool.rename('Test View (renamed)')
+  });
 })
 </script>
 </html>
