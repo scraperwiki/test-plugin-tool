@@ -1,5 +1,5 @@
 {
   "displayName": "Test Plugin",
   "gitUrl": "https://github.com/scraperwiki/test-plugin-tool.git",
-  "description": "ScraperWiki tool for testing ScraperWiki itself."
+  "description": "ScraperWiki tool for testing ScraperWiki itself"
 }
