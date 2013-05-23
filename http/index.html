@@ -3,7 +3,9 @@
   <button id="redirectExternal">External Redirect</button>
   <button id="showURL">Show URL</button>
   <button id="rename">Rename</button>
+  <button class="btn" id="getDatasetName">Get dataset name</button>
   <p id="textURL">Outer URL will appear here</p>
+  <p id="datasetName" style="margin: 10px;">Datset name should appear here</p>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script src="//beta-dev.scraperwiki.com/js/scraperwiki.js"></script>
 <script type="text/javascript">
@@ -23,6 +25,9 @@ $(function(){
   $('#rename').on('click', function(){
     scraperwiki.tool.rename('Test View (renamed)')
   });
+  $('#getDatasetName').on('click', function(){
+    $('#datasetName').text(scraperwiki.readSettings().target.displayName)
+  })
 })
 </script>
 </html>
